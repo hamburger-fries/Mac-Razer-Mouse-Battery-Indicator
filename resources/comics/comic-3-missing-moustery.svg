@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" font-family="'Comic Sans MS', 'Chalkboard SE', cursive">
+  <defs>
+    <filter id="shadow3">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+    <style>
+      .panel-bg { fill: #FFF8E7; }
+      .panel-border { fill: none; stroke: #2C1810; stroke-width: 3; }
+      .speech { fill: white; stroke: #2C1810; stroke-width: 2; }
+      .thought { fill: white; stroke: #2C1810; stroke-width: 2; }
+      .speech-text { fill: #2C1810; font-size: 13px; font-weight: bold; }
+      .body-outline { fill: #F5D6A8; stroke: #2C1810; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .hair-gene { fill: #F5D6A8; stroke: #2C1810; stroke-width: 1.5; }
+      .eye { fill: #2C1810; }
+      .mouth { fill: none; stroke: #2C1810; stroke-width: 2; stroke-linecap: round; }
+      .shirt-yellow { fill: #F4D03F; stroke: #2C1810; stroke-width: 2.5; }
+      .desk { fill: #8B6914; stroke: #2C1810; stroke-width: 2; }
+      .gray-icon { fill: #999; stroke: #999; }
+      .green-fill { fill: #4CAF50; }
+      .board { fill: #2C3E2C; stroke: #5C4033; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="380" rx="12" fill="#FDF5E6" filter="url(#shadow3)"/>
+
+  <!-- Title Banner -->
+  <rect x="0" y="0" width="900" height="45" rx="12" fill="#888"/>
+  <rect x="0" y="20" width="900" height="25" fill="#888"/>
+  <text x="450" y="30" text-anchor="middle" fill="white" font-size="22" font-weight="bold">"The Missing Mouse-tery"</text>
+
+  <!-- Panel 1: Disconnected - looking for mouse -->
+  <rect x="15" y="55" width="270" height="265" rx="8" class="panel-bg"/>
+  <rect x="15" y="55" width="270" height="265" rx="8" class="panel-border"/>
+
+  <!-- Panel 1: Empty desk with question marks -->
+  <rect x="40" y="245" width="220" height="12" rx="3" class="desk"/>
+  <!-- Ghost outline of where mouse was -->
+  <ellipse cx="160" cy="240" rx="22" ry="14" fill="none" stroke="#ccc" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="160" y="235" text-anchor="middle" fill="#ccc" font-size="20" font-weight="bold">?</text>
+
+  <!-- Panel 1: Gray disconnected battery icon -->
+  <g transform="translate(180, 160)">
+    <rect x="0" y="5" width="24" height="40" rx="4" stroke="#999" stroke-width="2.5" fill="none"/>
+    <rect x="7" y="0" width="10" height="7" rx="2" fill="#999"/>
+    <!-- X mark inside -->
+    <line x1="7" y1="18" x2="17" y2="33" stroke="#999" stroke-width="2"/>
+    <line x1="17" y1="18" x2="7" y2="33" stroke="#999" stroke-width="2"/>
+  </g>
+
+  <!-- Panel 1: Character looking under desk (Gene-style) -->
+  <g transform="translate(80, 165)">
+    <!-- Body bent over -->
+    <path d="M-10,40 Q-10,28 0,22 Q10,28 10,40 L10,65 L-10,65 Z" class="shirt-yellow"/>
+    <!-- Head (looking down/sideways) -->
+    <ellipse cx="5" cy="12" rx="20" ry="22" class="body-outline"/>
+    <!-- Gene's ears (big) -->
+    <ellipse cx="-16" cy="12" rx="6" ry="8" class="body-outline"/>
+    <ellipse cx="22" cy="8" rx="6" ry="8" class="body-outline"/>
+    <!-- Short hair -->
+    <path d="M-14,-5 Q-5,-18 10,-15 Q20,-12 18,-2" fill="#2C1810" stroke="#2C1810" stroke-width="1"/>
+    <!-- Confused eyes -->
+    <circle cx="-3" cy="8" r="3" class="eye"/>
+    <circle cx="10" cy="6" r="3" class="eye"/>
+    <!-- Confused mouth -->
+    <path d="M0,18 Q5,16 8,20 Q11,16 13,18" class="mouth" stroke-width="1.5"/>
+    <!-- Looking down gesture arm -->
+    <line x1="-10" y1="45" x2="-25" y2="60" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="-27" cy="62" r="4" class="body-outline"/>
+  </g>
+
+  <!-- Panel 1: Speech bubble -->
+  <path d="M30,70 Q30,60 65,60 L200,60 Q220,60 220,70 L220,110 Q220,120 200,120 L120,120 L100,140 L108,120 L30,120 Q30,120 30,110 Z" class="speech"/>
+  <text x="125" y="82" text-anchor="middle" class="speech-text" font-size="11">Where'd my mouse go?!</text>
+  <text x="125" y="100" text-anchor="middle" class="speech-text" font-size="13" fill="#999">It's a MOUSE-tery!</text>
+  <text x="125" y="115" text-anchor="middle" font-size="9" fill="#666" font-style="italic">*looks under desk*</text>
+
+  <!-- Panel 2: Fast polling - waiting impatiently -->
+  <rect x="295" y="55" width="270" height="265" rx="8" class="panel-bg"/>
+  <rect x="295" y="55" width="270" height="265" rx="8" class="panel-border"/>
+
+  <!-- Panel 2: Clock/timer visual -->
+  <g transform="translate(430, 100)">
+    <circle cx="0" cy="0" r="25" fill="white" stroke="#2C1810" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" fill="#2C1810" font-size="10" font-weight="bold">30s</text>
+    <!-- Clock hands -->
+    <line x1="0" y1="0" x2="0" y2="-15" stroke="#CC2E26" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="10" y2="5" stroke="#2C1810" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Spinning arrows -->
+    <path d="M28,-5 A30,30 0 0,1 20,20" fill="none" stroke="#E67D21" stroke-width="2"/>
+    <polygon points="20,20 25,15 22,23" fill="#E67D21"/>
+    <path d="M-28,5 A30,30 0 0,1 -20,-20" fill="none" stroke="#E67D21" stroke-width="2"/>
+    <polygon points="-20,-20 -25,-15 -22,-23" fill="#E67D21"/>
+  </g>
+
+  <!-- Panel 2: Character tapping foot -->
+  <g transform="translate(360, 170)">
+    <path d="M-12,40 Q-12,28 0,22 Q12,28 12,40 L12,70 L-12,70 Z" class="shirt-yellow"/>
+    <ellipse cx="0" cy="10" rx="18" ry="20" class="body-outline"/>
+    <ellipse cx="-15" cy="10" rx="5" ry="7" class="body-outline"/>
+    <ellipse cx="17" cy="7" rx="5" ry="7" class="body-outline"/>
+    <path d="M-12,-3 Q-3,-15 8,-12 Q17,-10 15,0" fill="#2C1810" stroke="#2C1810" stroke-width="1"/>
+    <!-- Impatient eyes (half-lidded) -->
+    <path d="M-7,5 Q-4,3 -1,5" fill="none" stroke="#2C1810" stroke-width="2.5"/>
+    <path d="M4,4 Q7,2 10,4" fill="none" stroke="#2C1810" stroke-width="2.5"/>
+    <!-- Flat mouth -->
+    <line x1="-4" y1="17" x2="4" y2="17" class="mouth"/>
+    <!-- Arms crossed -->
+    <path d="M-12,45 Q0,50 12,45" fill="none" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Tapping foot lines -->
+    <line x1="-5" y1="75" x2="-8" y2="80" stroke="#2C1810" stroke-width="1" opacity="0.6"/>
+    <line x1="-3" y1="77" x2="-6" y2="82" stroke="#2C1810" stroke-width="1" opacity="0.4"/>
+    <line x1="-1" y1="79" x2="-4" y2="84" stroke="#2C1810" stroke-width="1" opacity="0.2"/>
+  </g>
+
+  <!-- Panel 2: Thought bubble (polling info) -->
+  <path d="M390,75 Q390,60 420,60 L520,60 Q540,60 540,75 L540,115 Q540,130 520,130 L420,130 Q400,130 390,115 Z" class="thought"/>
+  <!-- Thought dots -->
+  <circle cx="395" cy="140" r="5" class="thought"/>
+  <circle cx="385" cy="150" r="3" class="thought"/>
+  <text x="465" y="80" text-anchor="middle" class="speech-text" font-size="11">Scanning every</text>
+  <text x="465" y="97" text-anchor="middle" class="speech-text" font-size="14" fill="#E67D21">30 seconds...</text>
+  <text x="465" y="115" text-anchor="middle" font-size="10" fill="#888">*tap tap tap*</text>
+
+  <!-- Panel 3: FOUND IT! Reconnected -->
+  <rect x="575" y="55" width="310" height="265" rx="8" class="panel-bg"/>
+  <rect x="575" y="55" width="310" height="265" rx="8" class="panel-border"/>
+
+  <!-- Panel 3: Green battery icon (reconnected) -->
+  <g transform="translate(750, 110)">
+    <rect x="0" y="8" width="30" height="50" rx="4" stroke="#4CAF50" stroke-width="3" fill="none"/>
+    <rect x="8" y="0" width="14" height="10" rx="3" fill="#4CAF50"/>
+    <!-- All segments filled -->
+    <rect x="5" y="42" width="20" height="10" rx="2" class="green-fill"/>
+    <rect x="5" y="28" width="20" height="10" rx="2" class="green-fill"/>
+    <rect x="5" y="14" width="20" height="10" rx="2" class="green-fill"/>
+    <!-- Sparkles -->
+    <text x="-8" y="25" fill="#FFD700" font-size="14">!</text>
+    <text x="35" y="35" fill="#FFD700" font-size="14">!</text>
+    <!-- Checkmark -->
+    <text x="15" y="80" text-anchor="middle" fill="#4CAF50" font-size="18" font-weight="bold">85%</text>
+  </g>
+
+  <!-- Panel 3: Mouse back on desk -->
+  <rect x="610" y="248" width="180" height="12" rx="3" class="desk"/>
+  <ellipse cx="700" cy="243" rx="22" ry="14" fill="#333" stroke="#2C1810" stroke-width="2"/>
+  <ellipse cx="700" cy="233" rx="8" ry="5" fill="#555"/>
+  <!-- Glow around mouse -->
+  <ellipse cx="700" cy="243" rx="30" ry="20" fill="none" stroke="#4CAF50" stroke-width="1" opacity="0.4"/>
+  <ellipse cx="700" cy="243" rx="36" ry="24" fill="none" stroke="#4CAF50" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Panel 3: Ecstatic character -->
+  <g transform="translate(640, 160)">
+    <path d="M-12,40 Q-12,28 0,22 Q12,28 12,40 L12,70 L-12,70 Z" class="shirt-yellow"/>
+    <!-- Arms up celebrating -->
+    <line x1="-12" y1="38" x2="-30" y2="10" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="12" y1="38" x2="30" y2="10" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="-32" cy="8" r="4" class="body-outline"/>
+    <circle cx="32" cy="8" r="4" class="body-outline"/>
+    <ellipse cx="0" cy="10" rx="18" ry="20" class="body-outline"/>
+    <ellipse cx="-15" cy="10" rx="5" ry="7" class="body-outline"/>
+    <ellipse cx="17" cy="7" rx="5" ry="7" class="body-outline"/>
+    <path d="M-12,-3 Q-3,-15 8,-12 Q17,-10 15,0" fill="#2C1810" stroke="#2C1810" stroke-width="1"/>
+    <!-- Jubilant eyes -->
+    <path d="M-8,4 Q-5,1 -2,4" fill="none" stroke="#2C1810" stroke-width="2.5"/>
+    <path d="M3,3 Q6,0 9,3" fill="none" stroke="#2C1810" stroke-width="2.5"/>
+    <!-- Big happy mouth -->
+    <path d="M-6,15 Q0,24 6,15" class="mouth"/>
+  </g>
+
+  <!-- Panel 3: Speech bubble -->
+  <path d="M590,68 Q590,58 625,58 L790,58 Q810,58 810,68 L810,105 Q810,115 790,115 L690,115 L670,135 L678,115 L590,115 Q590,115 590,105 Z" class="speech"/>
+  <text x="700" y="78" text-anchor="middle" class="speech-text" font-size="12">The MOUSE-tery</text>
+  <text x="700" y="98" text-anchor="middle" class="speech-text" font-size="15" fill="#4CAF50">is SOLVED!</text>
+  <text x="700" y="112" text-anchor="middle" font-size="9" fill="#666" font-style="italic">*5-min polling restored*</text>
+
+  <!-- Burger of the Day board (panel 2 bottom) -->
+  <g>
+    <rect x="310" y="220" width="240" height="85" rx="5" fill="#2C3E2C" stroke="#5C4033" stroke-width="3"/>
+    <rect x="313" y="223" width="234" height="79" rx="4" fill="none" stroke="#6B4226" stroke-width="1.5"/>
+    <text x="430" y="242" text-anchor="middle" fill="#FFD700" font-size="12" font-weight="bold">Burger of the Day</text>
+    <line x1="325" y1="248" x2="535" y2="248" stroke="#FFD700" stroke-width="0.5"/>
+    <text x="430" y="266" text-anchor="middle" fill="#F0E68C" font-size="11">"The Mouse-tery Meat Burger"</text>
+    <text x="430" y="283" text-anchor="middle" fill="#F0E68C" font-size="9">now you see it, now you don't</text>
+    <text x="430" y="296" text-anchor="middle" fill="#F0E68C" font-size="9">(polled every 30 seconds)</text>
+  </g>
+
+  <!-- Bottom caption bar -->
+  <rect x="0" y="335" width="900" height="45" rx="0" fill="#2C1810"/>
+  <rect x="0" y="358" width="900" height="22" rx="12" fill="#2C1810"/>
+  <text x="450" y="360" text-anchor="middle" fill="#F0E68C" font-size="13">Disconnected (GRAY)  -->  Fast 30s Polling  -->  Reconnected (GREEN, back to 5-min poll)</text>
+</svg>

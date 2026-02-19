@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" font-family="'Comic Sans MS', 'Chalkboard SE', cursive">
+  <defs>
+    <filter id="shadow2">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+    <style>
+      .panel-bg { fill: #FFF8E7; }
+      .panel-border { fill: none; stroke: #2C1810; stroke-width: 3; }
+      .speech { fill: white; stroke: #2C1810; stroke-width: 2; }
+      .speech-text { fill: #2C1810; font-size: 13px; font-weight: bold; }
+      .body-outline { fill: #F5D6A8; stroke: #2C1810; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .hair { fill: #B8860B; stroke: #2C1810; stroke-width: 1.5; }
+      .eye { fill: #2C1810; }
+      .mouth { fill: none; stroke: #2C1810; stroke-width: 2; stroke-linecap: round; }
+      .shirt-blue { fill: #5B9BD5; stroke: #2C1810; stroke-width: 2.5; }
+      .orange-fill { fill: #E67D21; }
+      .yellow-green-fill { fill: #BFD438; }
+      .green-fill { fill: #4CAF50; }
+      .board { fill: #2C3E2C; stroke: #5C4033; stroke-width: 3; }
+      .board-text { fill: #F0E68C; font-size: 11px; }
+      .board-title { fill: #FFD700; font-size: 13px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="380" rx="12" fill="#FDF5E6" filter="url(#shadow2)"/>
+
+  <!-- Title Banner -->
+  <rect x="0" y="0" width="900" height="45" rx="12" fill="#E67D21"/>
+  <rect x="0" y="20" width="900" height="25" fill="#E67D21"/>
+  <text x="450" y="30" text-anchor="middle" fill="white" font-size="22" font-weight="bold">"From Medium to Well Done"</text>
+
+  <!-- Panel 1: Low/Orange (20%) -->
+  <rect x="15" y="55" width="270" height="265" rx="8" class="panel-bg"/>
+  <rect x="15" y="55" width="270" height="265" rx="8" class="panel-border"/>
+
+  <!-- Panel 1: Big battery icon -->
+  <g transform="translate(170, 100)">
+    <rect x="0" y="8" width="36" height="60" rx="5" stroke="#E67D21" stroke-width="3" fill="none"/>
+    <rect x="10" y="0" width="16" height="10" rx="3" fill="#E67D21"/>
+    <!-- 1 segment filled (bottom) -->
+    <rect x="6" y="50" width="24" height="12" rx="2" class="orange-fill"/>
+    <!-- Empty segments -->
+    <rect x="6" y="34" width="24" height="12" rx="2" fill="none" stroke="#ddd" stroke-width="1" stroke-dasharray="2,2"/>
+    <rect x="6" y="18" width="24" height="12" rx="2" fill="none" stroke="#ddd" stroke-width="1" stroke-dasharray="2,2"/>
+    <!-- Percentage -->
+    <text x="18" y="85" text-anchor="middle" fill="#E67D21" font-size="16" font-weight="bold">20%</text>
+  </g>
+
+  <!-- Panel 1: Character (Linda-style) looking impatient -->
+  <g transform="translate(80, 150)">
+    <!-- Body/shirt -->
+    <path d="M-15,45 Q-15,30 0,25 Q15,30 15,45 L15,75 L-15,75 Z" class="shirt-blue"/>
+    <!-- Head -->
+    <ellipse cx="0" cy="10" rx="20" ry="23" class="body-outline"/>
+    <!-- Hair (Linda style - big) -->
+    <path d="M-22,-5 Q-20,-22 -5,-20 Q5,-25 15,-18 Q25,-15 22,-3 Q24,0 22,5" class="hair"/>
+    <!-- Glasses -->
+    <circle cx="-7" cy="5" r="7" fill="none" stroke="#2C1810" stroke-width="1.5"/>
+    <circle cx="7" cy="5" r="7" fill="none" stroke="#2C1810" stroke-width="1.5"/>
+    <line x1="0" y1="5" x2="0" y2="5" stroke="#2C1810" stroke-width="1.5"/>
+    <!-- Eyes through glasses -->
+    <circle cx="-7" cy="5" r="2" class="eye"/>
+    <circle cx="7" cy="5" r="2" class="eye"/>
+    <!-- Skeptical mouth -->
+    <path d="M-5,18 L5,16" class="mouth"/>
+    <!-- Arms crossed -->
+    <path d="M-15,50 Q-5,55 15,50" fill="none" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Panel 1: Speech bubble -->
+  <path d="M35,70 Q35,60 70,60 L195,60 Q215,60 215,70 L215,100 Q215,110 195,110 L110,110 L90,125 L98,110 L35,110 Q35,110 35,100 Z" class="speech"/>
+  <text x="125" y="82" text-anchor="middle" class="speech-text" font-size="12">It's still</text>
+  <text x="125" y="100" text-anchor="middle" class="speech-text" font-size="14" fill="#E67D21">MEDIUM rare...</text>
+
+  <!-- Panel 2: Medium/Yellow-green (45%) -->
+  <rect x="295" y="55" width="270" height="265" rx="8" class="panel-bg"/>
+  <rect x="295" y="55" width="270" height="265" rx="8" class="panel-border"/>
+
+  <!-- Panel 2: Big battery icon -->
+  <g transform="translate(450, 100)">
+    <rect x="0" y="8" width="36" height="60" rx="5" stroke="#BFD438" stroke-width="3" fill="none"/>
+    <rect x="10" y="0" width="16" height="10" rx="3" fill="#BFD438"/>
+    <!-- 2 segments filled -->
+    <rect x="6" y="50" width="24" height="12" rx="2" class="orange-fill"/>
+    <rect x="6" y="34" width="24" height="12" rx="2" class="yellow-green-fill"/>
+    <!-- Empty segment -->
+    <rect x="6" y="18" width="24" height="12" rx="2" fill="none" stroke="#ddd" stroke-width="1" stroke-dasharray="2,2"/>
+    <!-- Percentage -->
+    <text x="18" y="85" text-anchor="middle" fill="#BFD438" font-size="16" font-weight="bold">45%</text>
+  </g>
+
+  <!-- Panel 2: Arrow showing progression -->
+  <g transform="translate(405, 145)">
+    <line x1="0" y1="0" x2="30" y2="0" stroke="#2C1810" stroke-width="2"/>
+    <polygon points="30,-5 40,0 30,5" fill="#2C1810"/>
+  </g>
+
+  <!-- Panel 2: Character perking up -->
+  <g transform="translate(360, 150)">
+    <path d="M-15,45 Q-15,30 0,25 Q15,30 15,45 L15,75 L-15,75 Z" class="shirt-blue"/>
+    <ellipse cx="0" cy="10" rx="20" ry="23" class="body-outline"/>
+    <path d="M-22,-5 Q-20,-22 -5,-20 Q5,-25 15,-18 Q25,-15 22,-3 Q24,0 22,5" class="hair"/>
+    <circle cx="-7" cy="5" r="7" fill="none" stroke="#2C1810" stroke-width="1.5"/>
+    <circle cx="7" cy="5" r="7" fill="none" stroke="#2C1810" stroke-width="1.5"/>
+    <circle cx="-7" cy="5" r="2" class="eye"/>
+    <circle cx="7" cy="5" r="2" class="eye"/>
+    <!-- Slight smile -->
+    <path d="M-5,18 Q0,22 5,18" class="mouth"/>
+  </g>
+
+  <!-- Panel 2: Speech bubble -->
+  <path d="M315,70 Q315,60 350,60 L475,60 Q495,60 495,70 L495,100 Q495,110 475,110 L395,110 L375,125 L383,110 L315,110 Q315,110 315,100 Z" class="speech"/>
+  <text x="405" y="82" text-anchor="middle" class="speech-text" font-size="12">Getting to</text>
+  <text x="405" y="100" text-anchor="middle" class="speech-text" font-size="14" fill="#9AAD15">MEDIUM!</text>
+
+  <!-- Panel 3: Full/Green (95%) -->
+  <rect x="575" y="55" width="310" height="265" rx="8" class="panel-bg"/>
+  <rect x="575" y="55" width="310" height="265" rx="8" class="panel-border"/>
+
+  <!-- Panel 3: Big battery icon - FULL -->
+  <g transform="translate(740, 100)">
+    <rect x="0" y="8" width="36" height="60" rx="5" stroke="#4CAF50" stroke-width="3" fill="none"/>
+    <rect x="10" y="0" width="16" height="10" rx="3" fill="#4CAF50"/>
+    <!-- All 3 segments filled -->
+    <rect x="6" y="50" width="24" height="12" rx="2" class="green-fill"/>
+    <rect x="6" y="34" width="24" height="12" rx="2" class="green-fill"/>
+    <rect x="6" y="18" width="24" height="12" rx="2" class="green-fill"/>
+    <!-- Percentage -->
+    <text x="18" y="85" text-anchor="middle" fill="#4CAF50" font-size="16" font-weight="bold">95%</text>
+    <!-- Sparkle effects -->
+    <text x="-10" y="25" fill="#FFD700" font-size="12">*</text>
+    <text x="42" y="40" fill="#FFD700" font-size="14">*</text>
+    <text x="-8" y="55" fill="#FFD700" font-size="10">*</text>
+  </g>
+
+  <!-- Panel 3: Ecstatic character doing chef's kiss -->
+  <g transform="translate(650, 150)">
+    <path d="M-15,45 Q-15,30 0,25 Q15,30 15,45 L15,75 L-15,75 Z" class="shirt-blue"/>
+    <!-- Chef's kiss hand -->
+    <line x1="15" y1="40" x2="30" y2="20" stroke="#2C1810" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="32" cy="16" r="5" class="body-outline"/>
+    <!-- Head -->
+    <ellipse cx="0" cy="10" rx="20" ry="23" class="body-outline"/>
+    <path d="M-22,-5 Q-20,-22 -5,-20 Q5,-25 15,-18 Q25,-15 22,-3 Q24,0 22,5" class="hair"/>
+    <circle cx="-7" cy="5" r="7" fill="none" stroke="#2C1810" stroke-width="1.5"/>
+    <circle cx="7" cy="5" r="7" fill="none" stroke="#2C1810" stroke-width="1.5"/>
+    <!-- Happy squinted eyes -->
+    <path d="M-10,4 Q-7,2 -4,4" fill="none" stroke="#2C1810" stroke-width="2"/>
+    <path d="M4,4 Q7,2 10,4" fill="none" stroke="#2C1810" stroke-width="2"/>
+    <!-- Big smile -->
+    <path d="M-8,17 Q0,26 8,17" class="mouth"/>
+    <!-- Kiss marks -->
+    <text x="35" y="12" fill="#FF69B4" font-size="10">*mwah*</text>
+  </g>
+
+  <!-- Panel 3: Speech bubble -->
+  <path d="M595,70 Q595,60 630,60 L770,60 Q790,60 790,70 L790,100 Q790,110 770,110 L690,110 L670,125 L678,110 L595,110 Q595,110 595,100 Z" class="speech"/>
+  <text x="692" y="82" text-anchor="middle" class="speech-text" font-size="12">Now THAT'S</text>
+  <text x="692" y="100" text-anchor="middle" class="speech-text" font-size="15" fill="#4CAF50">WELL DONE!</text>
+
+  <!-- Burger of the Day board (bottom right) -->
+  <g>
+    <rect x="735" y="215" width="140" height="90" rx="5" fill="#2C3E2C" stroke="#5C4033" stroke-width="3"/>
+    <rect x="738" y="218" width="134" height="84" rx="4" fill="none" stroke="#6B4226" stroke-width="1.5"/>
+    <text x="805" y="237" text-anchor="middle" fill="#FFD700" font-size="12" font-weight="bold">Burger of the Day</text>
+    <line x1="750" y1="243" x2="860" y2="243" stroke="#FFD700" stroke-width="0.5"/>
+    <text x="805" y="260" text-anchor="middle" fill="#F0E68C" font-size="10">"The Medium to</text>
+    <text x="805" y="275" text-anchor="middle" fill="#F0E68C" font-size="10">Well Done Burger"</text>
+    <text x="805" y="295" text-anchor="middle" fill="#F0E68C" font-size="8">comes with three</text>
+    <text x="805" y="305" text-anchor="middle" fill="#F0E68C" font-size="8">green segments</text>
+  </g>
+
+  <!-- Bottom caption bar -->
+  <rect x="0" y="335" width="900" height="45" rx="0" fill="#2C1810"/>
+  <rect x="0" y="358" width="900" height="22" rx="12" fill="#2C1810"/>
+  <text x="450" y="360" text-anchor="middle" fill="#F0E68C" font-size="13">Battery Journey: Low (ORANGE 11-30%)  -->  Medium (YELLOW-GREEN 31-60%)  -->  Full (GREEN 61-100%)</text>
+</svg>

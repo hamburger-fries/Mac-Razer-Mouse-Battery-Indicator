@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" font-family="'Comic Sans MS', 'Chalkboard SE', cursive">
+  <defs>
+    <filter id="shadow1">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+    <style>
+      .panel-bg { fill: #FFF8E7; }
+      .panel-border { fill: none; stroke: #2C1810; stroke-width: 3; }
+      .speech { fill: white; stroke: #2C1810; stroke-width: 2; }
+      .speech-text { fill: #2C1810; font-size: 13px; font-weight: bold; }
+      .title-text { fill: #2C1810; font-size: 18px; font-weight: bold; }
+      .subtitle { fill: #8B4513; font-size: 11px; font-style: italic; }
+      .body-outline { fill: #F5D6A8; stroke: #2C1810; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .hair { fill: #2C1810; stroke: #2C1810; stroke-width: 1; }
+      .eye { fill: #2C1810; }
+      .mouth { fill: none; stroke: #2C1810; stroke-width: 2; stroke-linecap: round; }
+      .shirt { fill: #E8E8E8; stroke: #2C1810; stroke-width: 2.5; }
+      .desk { fill: #8B6914; stroke: #2C1810; stroke-width: 2; }
+      .mouse-body { fill: #333; stroke: #2C1810; stroke-width: 2; }
+      .board { fill: #2C3E2C; stroke: #5C4033; stroke-width: 3; }
+      .board-text { fill: #F0E68C; font-size: 11px; }
+      .board-title { fill: #FFD700; font-size: 13px; font-weight: bold; }
+      .battery-outline { fill: none; stroke: #2C1810; stroke-width: 2; }
+      .red-fill { fill: #CC2E26; }
+      .orange-fill { fill: #E67D21; }
+      .sweat { fill: #87CEEB; stroke: #2C1810; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="380" rx="12" fill="#FDF5E6" filter="url(#shadow1)"/>
+
+  <!-- Title Banner -->
+  <rect x="0" y="0" width="1200" height="45" rx="12" fill="#CC2E26"/>
+  <rect x="0" y="20" width="1200" height="25" fill="#CC2E26"/>
+  <text x="600" y="30" text-anchor="middle" fill="white" font-size="22" font-weight="bold" font-family="'Comic Sans MS', cursive">"The Rare-ly Charged Burger"</text>
+
+  <!-- Panel 1: Mouse dying -->
+  <rect x="15" y="55" width="270" height="265" rx="8" class="panel-bg"/>
+  <rect x="15" y="55" width="270" height="265" rx="8" class="panel-border"/>
+
+  <!-- Panel 1: Desk -->
+  <rect x="40" y="240" width="220" height="12" rx="3" class="desk"/>
+
+  <!-- Panel 1: Mouse on desk with red glow -->
+  <ellipse cx="200" cy="235" rx="22" ry="14" class="mouse-body"/>
+  <ellipse cx="200" cy="225" rx="8" ry="5" fill="#555"/>
+  <line x1="200" y1="208" x2="200" y2="195" stroke="#555" stroke-width="2"/>
+
+  <!-- Panel 1: Red battery icon floating above mouse -->
+  <g transform="translate(165, 165)">
+    <rect x="0" y="5" width="18" height="30" rx="3" stroke="#CC2E26" stroke-width="2" fill="none"/>
+    <rect x="5" y="0" width="8" height="6" rx="2" fill="#CC2E26"/>
+    <rect x="3" y="27" width="12" height="5" rx="1" class="red-fill" opacity="0.8"/>
+    <!-- Pulsing lines -->
+    <line x1="-5" y1="20" x2="-10" y2="18" stroke="#CC2E26" stroke-width="1.5"/>
+    <line x1="-5" y1="25" x2="-10" y2="27" stroke="#CC2E26" stroke-width="1.5"/>
+    <line x1="23" y1="20" x2="28" y2="18" stroke="#CC2E26" stroke-width="1.5"/>
+    <line x1="23" y1="25" x2="28" y2="27" stroke="#CC2E26" stroke-width="1.5"/>
+    <text x="9" y="23" text-anchor="middle" fill="#CC2E26" font-size="9" font-weight="bold">3%</text>
+  </g>
+
+  <!-- Panel 1: Character (Bob-style) looking worried -->
+  <g transform="translate(80, 130)">
+    <!-- Body/shirt -->
+    <path d="M-15,45 Q-15,30 0,25 Q15,30 15,45 L15,80 L-15,80 Z" class="shirt"/>
+    <!-- Head -->
+    <ellipse cx="0" cy="10" rx="22" ry="25" class="body-outline"/>
+    <!-- Hair -->
+    <path d="M-20,-8 Q-15,-20 0,-18 Q15,-20 20,-8 Q22,-12 20,-5" class="hair"/>
+    <!-- Mustache -->
+    <path d="M-10,15 Q-5,20 0,17 Q5,20 10,15" fill="#2C1810"/>
+    <!-- Worried eyes -->
+    <circle cx="-7" cy="3" r="3" class="eye"/>
+    <circle cx="7" cy="3" r="3" class="eye"/>
+    <line x1="-12" y1="-3" x2="-3" y2="0" stroke="#2C1810" stroke-width="2"/>
+    <line x1="12" y1="-3" x2="3" y2="0" stroke="#2C1810" stroke-width="2"/>
+    <!-- Worried mouth -->
+    <path d="M-6,22 Q0,18 6,22" class="mouth"/>
+    <!-- Sweat drop -->
+    <ellipse cx="18" cy="5" rx="3" ry="5" class="sweat"/>
+  </g>
+
+  <!-- Panel 1 caption -->
+  <text x="150" y="305" text-anchor="middle" class="subtitle">*cursor stuttering*</text>
+
+  <!-- Panel 2: Character panicking -->
+  <rect x="295" y="55" width="270" height="265" rx="8" class="panel-bg"/>
+  <rect x="295" y="55" width="270" height="265" rx="8" class="panel-border"/>
+
+  <!-- Panel 2: Speech bubble -->
+  <path d="M340,75 Q340,65 400,65 L500,65 Q530,65 530,75 L530,130 Q530,140 500,140 L420,140 L400,160 L410,140 L340,140 Q340,140 340,130 Z" class="speech"/>
+  <text x="435" y="88" text-anchor="middle" class="speech-text">My mouse is at 3%!</text>
+  <text x="435" y="108" text-anchor="middle" class="speech-text" fill="#CC2E26">It's RARE!</text>
+  <text x="435" y="128" text-anchor="middle" class="speech-text" font-size="11">Where's the charger?!</text>
+
+  <!-- Panel 2: Frantic character -->
+  <g transform="translate(430, 175)">
+    <!-- Body/shirt -->
+    <path d="M-15,45 Q-15,30 0,25 Q15,30 15,45 L15,80 L-15,80 Z" class="shirt"/>
+    <!-- Arms up in panic -->
+    <line x1="-15" y1="40" x2="-35" y2="15" stroke="#2C1810" stroke-width="3" stroke-linecap="round"/>
+    <line x1="15" y1="40" x2="35" y2="15" stroke="#2C1810" stroke-width="3" stroke-linecap="round"/>
+    <!-- Hands -->
+    <circle cx="-35" cy="13" r="5" class="body-outline"/>
+    <circle cx="35" cy="13" r="5" class="body-outline"/>
+    <!-- Head -->
+    <ellipse cx="0" cy="10" rx="22" ry="25" class="body-outline"/>
+    <!-- Hair -->
+    <path d="M-20,-8 Q-15,-20 0,-18 Q15,-20 20,-8 Q22,-12 20,-5" class="hair"/>
+    <!-- Mustache -->
+    <path d="M-10,15 Q-5,20 0,17 Q5,20 10,15" fill="#2C1810"/>
+    <!-- Panic eyes (wide) -->
+    <circle cx="-8" cy="2" r="4.5" fill="white" stroke="#2C1810" stroke-width="1.5"/>
+    <circle cx="8" cy="2" r="4.5" fill="white" stroke="#2C1810" stroke-width="1.5"/>
+    <circle cx="-7" cy="2" r="2.5" class="eye"/>
+    <circle cx="9" cy="2" r="2.5" class="eye"/>
+    <!-- Open mouth -->
+    <ellipse cx="0" cy="24" rx="8" ry="5" fill="#8B0000" stroke="#2C1810" stroke-width="1.5"/>
+    <!-- Motion lines -->
+    <line x1="-30" y1="-10" x2="-25" y2="-5" stroke="#2C1810" stroke-width="1" opacity="0.5"/>
+    <line x1="30" y1="-10" x2="25" y2="-5" stroke="#2C1810" stroke-width="1" opacity="0.5"/>
+    <line x1="-28" y1="0" x2="-23" y2="0" stroke="#2C1810" stroke-width="1" opacity="0.5"/>
+    <line x1="28" y1="0" x2="23" y2="0" stroke="#2C1810" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Panel 3: Plugging in + Burger of the Day board -->
+  <rect x="575" y="55" width="310" height="265" rx="8" class="panel-bg"/>
+  <rect x="575" y="55" width="310" height="265" rx="8" class="panel-border"/>
+
+  <!-- Panel 3: Charging cable with bolt -->
+  <g transform="translate(620, 140)">
+    <!-- Mouse being charged -->
+    <ellipse cx="40" cy="50" rx="22" ry="14" class="mouse-body"/>
+    <ellipse cx="40" cy="40" rx="8" ry="5" fill="#555"/>
+    <!-- Cable -->
+    <path d="M18,48 Q5,48 5,35 Q5,20 15,20" fill="none" stroke="#E67D21" stroke-width="3" stroke-linecap="round"/>
+    <!-- Plug icon -->
+    <rect x="12" y="14" width="10" height="14" rx="2" fill="#E67D21" stroke="#2C1810" stroke-width="1.5"/>
+
+    <!-- Orange charging battery icon -->
+    <g transform="translate(25, -20)">
+      <rect x="0" y="5" width="18" height="30" rx="3" stroke="#E67D21" stroke-width="2" fill="none"/>
+      <rect x="5" y="0" width="8" height="6" rx="2" fill="#E67D21"/>
+      <rect x="3" y="22" width="12" height="10" rx="1" class="orange-fill" opacity="0.7"/>
+      <!-- Lightning bolt -->
+      <polygon points="11,10 7,19 10,19 7,30 14,17 10,17 13,10" fill="#E67D21" stroke="#2C1810" stroke-width="0.8"/>
+    </g>
+  </g>
+
+  <!-- Panel 3: Happy character -->
+  <g transform="translate(640, 185)">
+    <ellipse cx="0" cy="10" rx="18" ry="20" class="body-outline"/>
+    <path d="M-16,-5 Q-12,-16 0,-14 Q12,-16 16,-5" class="hair"/>
+    <path d="M-8,13 Q-4,17 0,14 Q4,17 8,13" fill="#2C1810"/>
+    <circle cx="-6" cy="3" r="2.5" class="eye"/>
+    <circle cx="6" cy="3" r="2.5" class="eye"/>
+    <path d="M-5,19 Q0,24 5,19" class="mouth" stroke-width="1.5"/>
+  </g>
+
+  <!-- Panel 3: Burger of the Day board -->
+  <g transform="translate(720, 65)">
+    <rect x="0" y="0" width="150" height="100" rx="5" class="board"/>
+    <!-- Board frame -->
+    <rect x="3" y="3" width="144" height="94" rx="4" fill="none" stroke="#6B4226" stroke-width="1.5"/>
+    <text x="75" y="22" text-anchor="middle" class="board-title">Burger of the Day</text>
+    <line x1="15" y1="28" x2="135" y2="28" stroke="#FFD700" stroke-width="0.5"/>
+    <text x="75" y="45" text-anchor="middle" class="board-text" font-size="10">"The Rare-ly</text>
+    <text x="75" y="60" text-anchor="middle" class="board-text" font-size="10">Charged Burger"</text>
+    <line x1="15" y1="68" x2="135" y2="68" stroke="#5C4033" stroke-width="0.5"/>
+    <text x="75" y="82" text-anchor="middle" class="board-text" font-size="8">served with a side</text>
+    <text x="75" y="93" text-anchor="middle" class="board-text" font-size="8">of anxiety</text>
+  </g>
+
+  <!-- Panel 3: Speech bubble -->
+  <path d="M700,185 Q700,175 730,175 L830,175 Q850,175 850,185 L850,215 Q850,225 830,225 L760,225 L740,240 L748,225 L700,225 Q700,225 700,215 Z" class="speech"/>
+  <text x="775" y="198" text-anchor="middle" class="speech-text" font-size="11">Time to</text>
+  <text x="775" y="214" text-anchor="middle" class="speech-text" font-size="12" fill="#E67D21">CHARGE-broil it!</text>
+
+  <!-- Panel 4: Fully Charged -->
+  <rect x="900" y="55" width="285" height="265" rx="8" class="panel-bg"/>
+  <rect x="900" y="55" width="285" height="265" rx="8" class="panel-border"/>
+
+  <!-- Panel 4: Green battery icon -->
+  <g transform="translate(1040, 100)">
+    <rect x="0" y="5" width="18" height="30" rx="3" stroke="#2E8B57" stroke-width="2" fill="none"/>
+    <rect x="5" y="0" width="8" height="6" rx="2" fill="#2E8B57"/>
+    <rect x="3" y="8" width="12" height="24" rx="1" fill="#2E8B57"/>
+    <!-- Sparkles -->
+    <line x1="-10" y1="5" x2="-5" y2="10" stroke="#FFD700" stroke-width="1.5"/>
+    <line x1="-5" y1="5" x2="-10" y2="10" stroke="#FFD700" stroke-width="1.5"/>
+    <line x1="25" y1="30" x2="30" y2="35" stroke="#FFD700" stroke-width="1.5"/>
+    <line x1="30" y1="30" x2="25" y2="35" stroke="#FFD700" stroke-width="1.5"/>
+    <text x="9" y="48" text-anchor="middle" fill="#2E8B57" font-size="10" font-weight="bold">100%</text>
+  </g>
+
+  <!-- Panel 4: Happy Character -->
+  <g transform="translate(980, 180)">
+     <!-- Body/shirt -->
+    <path d="M-15,45 Q-15,30 0,25 Q15,30 15,45 L15,80 L-15,80 Z" class="shirt"/>
+    <!-- Head -->
+    <ellipse cx="0" cy="10" rx="22" ry="25" class="body-outline"/>
+    <!-- Hair -->
+    <path d="M-20,-8 Q-15,-20 0,-18 Q15,-20 20,-8 Q22,-12 20,-5" class="hair"/>
+    <!-- Mustache -->
+    <path d="M-10,15 Q-5,20 0,17 Q5,20 10,15" fill="#2C1810"/>
+    <!-- Happy eyes -->
+    <path d="M-10,0 Q-6,-4 -2,0" stroke="#2C1810" stroke-width="2" fill="none"/>
+    <path d="M2,0 Q6,-4 10,0" stroke="#2C1810" stroke-width="2" fill="none"/>
+    <!-- Big Smile -->
+    <path d="M-10,20 Q0,30 10,20" class="mouth"/>
+  </g>
+
+  <!-- Panel 4: Speech bubble -->
+  <path d="M1020,160 Q1020,150 1050,150 L1150,150 Q1170,150 1170,160 L1170,190 Q1170,200 1150,200 L1080,200 L1060,220 L1065,200 L1020,200 Q1020,200 1020,190 Z" class="speech"/>
+  <text x="1095" y="175" text-anchor="middle" class="speech-text" font-size="11">The "Fully Loaded"</text>
+  <text x="1095" y="190" text-anchor="middle" class="speech-text" font-size="11" fill="#2E8B57">is done!</text>
+
+  <!-- Bottom caption bar -->
+  <rect x="0" y="335" width="1200" height="45" rx="0" fill="#2C1810"/>
+  <rect x="0" y="358" width="1200" height="22" rx="12" fill="#2C1810"/>
+  <text x="600" y="360" text-anchor="middle" fill="#F0E68C" font-size="13" font-family="'Comic Sans MS', cursive">Battery State: Critical (0-10%) RED  -->  Charging Low (ORANGE bolt)  -->  Fully Charged (GREEN)</text>
+</svg>
