@@ -19,6 +19,52 @@
 
 ---
 
+## How the Battery Indicator Works
+
+*Inspired by Bob's Burgers — because batteries deserve a good pun too.*
+
+<table>
+<tr><td>
+<h3 align="center">Comic 1: "The Rare-ly Charged Burger"</h3>
+<p align="center"><em>When your battery hits critical (0–10%), it's served RARE</em></p>
+<p align="center">
+<img src="resources/comics/comic-1-rarely-charged.svg" alt="Comic 1: The Rare-ly Charged Burger - Critical battery at 3% turns red, character panics and plugs in charger" width="100%">
+</p>
+</td></tr>
+</table>
+
+<table>
+<tr><td>
+<h3 align="center">Comic 2: "From Medium to Well Done"</h3>
+<p align="center"><em>Watch the colors go from orange to green as it charges up</em></p>
+<p align="center">
+<img src="resources/comics/comic-2-medium-to-well-done.svg" alt="Comic 2: From Medium to Well Done - Battery charging from orange low through yellow-green medium to full green" width="100%">
+</p>
+</td></tr>
+</table>
+
+<table>
+<tr><td>
+<h3 align="center">Comic 3: "The Missing Mouse-tery"</h3>
+<p align="center"><em>Where'd the mouse go? Fast polling to the rescue!</em></p>
+<p align="center">
+<img src="resources/comics/comic-3-missing-moustery.svg" alt="Comic 3: The Missing Mouse-tery - Disconnected gray icon, fast 30-second polling, then reconnection" width="100%">
+</p>
+</td></tr>
+</table>
+
+<table>
+<tr><td>
+<h3 align="center">Comic 4: "Lightning Bolts & Cheese Melts"</h3>
+<p align="center"><em>The charging bolt journey from orange to green to ORDER UP!</em></p>
+<p align="center">
+<img src="resources/comics/comic-4-lightning-bolts.svg" alt="Comic 4: Lightning Bolts and Cheese Melts - Charging states from orange bolt to green bolt to fully charged" width="100%">
+</p>
+</td></tr>
+</table>
+
+---
+
 ## What It Does
 
 Open Razer macOS gives you native macOS control over your Razer peripherals without Razer Synapse. The **battery menu bar app** lives in your menu bar and keeps you informed about your wireless mouse's charge level with color-coded icons and smart polling. The **RGB control GUI** lets you set lighting effects on mice and keyboards.
@@ -176,53 +222,6 @@ Over **250 Razer devices** supported via [OpenRazer](https://github.com/openraze
 **Error Recovery**: Exponential backoff on repeated failures, per-interface retry logic, and interface preference tracking that remembers the last working interface.
 
 ---
-
-## How the Battery Indicator Works: A Comic Guide
-
-*Inspired by Bob's Burgers -- because batteries deserve a good pun too.*
-
-<table>
-<tr>
-<td align="center" width="50%">
-
-**Comic 1: "The Rare-ly Charged Burger"**
-
-<img src="resources/comics/comic-1-rarely-charged.svg" alt="Comic 1: The Rare-ly Charged Burger - Critical battery at 3% turns red, character panics and plugs in charger" width="100%">
-
-*When your battery hits critical (0-10%), it's served RARE*
-
-</td>
-<td align="center" width="50%">
-
-**Comic 2: "From Medium to Well Done"**
-
-<img src="resources/comics/comic-2-medium-to-well-done.svg" alt="Comic 2: From Medium to Well Done - Battery charging from orange low through yellow-green medium to full green" width="100%">
-
-*Watch the colors go from orange to green as it charges up*
-
-</td>
-</tr>
-<tr>
-<td align="center" width="50%">
-
-**Comic 3: "The Missing Mouse-tery"**
-
-<img src="resources/comics/comic-3-missing-moustery.svg" alt="Comic 3: The Missing Mouse-tery - Disconnected gray icon, fast 30-second polling, then reconnection" width="100%">
-
-*Where'd the mouse go? Fast polling to the rescue!*
-
-</td>
-<td align="center" width="50%">
-
-**Comic 4: "Lightning Bolts & Cheese Melts"**
-
-<img src="resources/comics/comic-4-lightning-bolts.svg" alt="Comic 4: Lightning Bolts and Cheese Melts - Charging states from orange bolt to green bolt to fully charged" width="100%">
-
-*The charging bolt journey from orange to green to ORDER UP!*
-
-</td>
-</tr>
-</table>
 
 ---
 
