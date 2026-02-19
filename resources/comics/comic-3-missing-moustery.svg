@@ -17,20 +17,15 @@
   <!-- Title Bar -->
   <rect width="1000" height="52" rx="14" fill="url(#grayToGreen)" clip-path="url(#titleClip)"/>
   <rect y="28" width="1000" height="24" fill="url(#grayToGreen)"/>
-  <text x="500" y="34" text-anchor="middle" fill="white" font-size="19" font-weight="700" letter-spacing="0.3">"The Missing Mouse-tery"</text>
+  <text x="500" y="34" text-anchor="middle" fill="white" font-size="19" font-weight="700" letter-spacing="0.3">Lesson 3: "Mouse Disconnected"</text>
 
   <!-- Panel 1: Disconnected -->
   <g filter="url(#panelShadow)">
     <rect x="16" y="64" width="310" height="296" rx="12" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
   </g>
 
-  <!-- P1: Empty desk with ghost mouse outline -->
-  <rect x="50" y="285" width="200" height="10" rx="4" fill="#D4A853" stroke="#A37B2C" stroke-width="1"/>
-  <ellipse cx="170" cy="278" rx="20" ry="12" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4,3"/>
-  <text x="170" y="283" text-anchor="middle" fill="#CBD5E1" font-size="18" font-weight="700">?</text>
-
-  <!-- P1: Gray disconnected battery -->
-  <g transform="translate(210,160)">
+  <!-- P1: Gray disconnected battery (top right, clear area) -->
+  <g transform="translate(248,80)">
     <rect x="0" y="6" width="26" height="44" rx="5" fill="none" stroke="#94A3B8" stroke-width="2.5"/>
     <rect x="7" y="0" width="12" height="8" rx="3" fill="#94A3B8"/>
     <!-- X mark -->
@@ -38,45 +33,52 @@
     <line x1="18" y1="20" x2="8" y2="36" stroke="#94A3B8" stroke-width="2.2" stroke-linecap="round"/>
   </g>
 
-  <!-- P1: Gene confused -->
+  <!-- P1: Empty desk with ghost mouse outline -->
+  <rect x="50" y="300" width="200" height="8" rx="4" fill="#94A3B8" stroke="#64748B" stroke-width="1"/>
+  <ellipse cx="170" cy="293" rx="20" ry="12" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="170" y="298" text-anchor="middle" fill="#CBD5E1" font-size="18" font-weight="700">?</text>
+
+  <!-- P1: Teacher confused -->
   <g transform="translate(95,185)">
     <!-- Body -->
-    <rect x="-13" y="40" width="26" height="38" rx="7" fill="#EAB308" stroke="#334155" stroke-width="2"/>
-    <!-- Arm pointing down -->
-    <line x1="-13" y1="50" x2="-28" y2="68" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
-    <circle cx="-30" cy="70" r="4.5" fill="#FBBF80" stroke="#334155" stroke-width="1.5"/>
+    <rect x="-16" y="42" width="32" height="44" rx="9" fill="#2D8B6F" stroke="#334155" stroke-width="2"/>
+    <!-- Arm scratching head -->
+    <line x1="16" y1="46" x2="24" y2="10" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="25" cy="7" r="5" fill="#D4A574" stroke="#334155" stroke-width="1.5"/>
     <!-- Head -->
-    <circle cx="0" cy="14" r="20" fill="#FBBF80" stroke="#334155" stroke-width="2"/>
-    <!-- Big ears -->
-    <ellipse cx="-18" cy="14" rx="5" ry="7" fill="#FBBF80" stroke="#334155" stroke-width="1.5"/>
-    <ellipse cx="18" cy="11" rx="5" ry="7" fill="#FBBF80" stroke="#334155" stroke-width="1.5"/>
-    <!-- Short dark hair -->
-    <path d="M-14,-2 Q-6,-14 6,-12 Q16,-10 14,0" fill="#3F2305" stroke="#334155" stroke-width="1.2"/>
+    <circle cx="0" cy="16" r="24" fill="#D4A574" stroke="#334155" stroke-width="2"/>
+    <!-- Hair -->
+    <path d="M-20,-6 Q-14,-20 0,-18 Q14,-20 20,-6" fill="#5C3D2E" stroke="#334155" stroke-width="1.5"/>
+    <rect x="-20" y="-8" width="40" height="6" rx="3" fill="#5C3D2E"/>
+    <!-- Glasses -->
+    <rect x="-14" y="6" width="11" height="9" rx="3" fill="none" stroke="#334155" stroke-width="1.8"/>
+    <rect x="3" y="6" width="11" height="9" rx="3" fill="none" stroke="#334155" stroke-width="1.8"/>
+    <line x1="-3" y1="10" x2="3" y2="10" stroke="#334155" stroke-width="1.5"/>
     <!-- Confused eyes -->
-    <circle cx="-5" cy="10" r="2.5" fill="#334155"/>
-    <circle cx="8" cy="9" r="2.5" fill="#334155"/>
+    <circle cx="-8" cy="11" r="2.5" fill="#334155"/>
+    <circle cx="8" cy="10" r="2.5" fill="#334155"/>
     <!-- One eyebrow raised -->
-    <line x1="-9" y1="3" x2="-2" y2="5" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
-    <line x1="5" y1="2" x2="11" y2="5" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
-    <!-- Squiggle confused mouth -->
-    <path d="M-4,22 Q-1,19 2,22 Q5,25 8,22" fill="none" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="-14" y1="3" x2="-5" y2="5" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+    <line x1="5" y1="2" x2="14" y2="5" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+    <!-- Confused mouth -->
+    <path d="M-4,26 Q-1,23 2,26 Q5,29 8,26" fill="none" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
   </g>
 
-  <!-- P1: Speech bubble -->
-  <rect x="32" y="76" width="214" height="72" rx="8" fill="white" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- P1: Speech bubble (left side) -->
+  <rect x="32" y="76" width="198" height="72" rx="8" fill="white" stroke="#CBD5E1" stroke-width="1.5"/>
   <polygon points="100,148 108,160 116,148" fill="white" stroke="#CBD5E1" stroke-width="1.5"/>
   <rect x="98" y="146" width="20" height="4" fill="white"/>
-  <text x="139" y="98" text-anchor="middle" fill="#1E293B" font-size="12" font-weight="600">Where'd my mouse go?!</text>
-  <text x="139" y="118" text-anchor="middle" fill="#94A3B8" font-size="14" font-weight="800">It's a MOUSE-tery!</text>
-  <text x="139" y="136" text-anchor="middle" fill="#94A3B8" font-size="10" font-style="italic">*looks under desk*</text>
+  <text x="131" y="98" text-anchor="middle" fill="#1E293B" font-size="12" font-weight="600">Oh no! The mouse</text>
+  <text x="131" y="118" text-anchor="middle" fill="#94A3B8" font-size="14" font-weight="800">is DISCONNECTED!</text>
+  <text x="131" y="136" text-anchor="middle" fill="#94A3B8" font-size="10" font-style="italic">*icon turns gray*</text>
 
   <!-- Panel 2: Fast polling -->
   <g filter="url(#panelShadow)">
     <rect x="338" y="64" width="310" height="296" rx="12" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
   </g>
 
-  <!-- P2: Clock / Timer -->
-  <g transform="translate(493,120)">
+  <!-- P2: Clock / Timer (top right, clear of bubble) -->
+  <g transform="translate(570,110)">
     <circle cx="0" cy="0" r="28" fill="white" stroke="#334155" stroke-width="2.5"/>
     <circle cx="0" cy="0" r="24" fill="none" stroke="#E2E8F0" stroke-width="1"/>
     <!-- Clock face ticks -->
@@ -97,52 +99,38 @@
     <polygon points="-24,-24 -29,-18 -26,-27" fill="#F97316"/>
   </g>
 
-  <!-- P2: Gene tapping foot -->
-  <g transform="translate(400,190)">
-    <rect x="-13" y="40" width="26" height="38" rx="7" fill="#EAB308" stroke="#334155" stroke-width="2"/>
+  <!-- P2: Teacher waiting patiently -->
+  <g transform="translate(400,195)">
+    <rect x="-16" y="42" width="32" height="44" rx="9" fill="#2D8B6F" stroke="#334155" stroke-width="2"/>
     <!-- Arms crossed -->
-    <path d="M-13,50 Q0,56 13,50" fill="none" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
-    <circle cx="0" cy="14" r="20" fill="#FBBF80" stroke="#334155" stroke-width="2"/>
-    <ellipse cx="-18" cy="14" rx="5" ry="7" fill="#FBBF80" stroke="#334155" stroke-width="1.5"/>
-    <ellipse cx="18" cy="11" rx="5" ry="7" fill="#FBBF80" stroke="#334155" stroke-width="1.5"/>
-    <path d="M-14,-2 Q-6,-14 6,-12 Q16,-10 14,0" fill="#3F2305" stroke="#334155" stroke-width="1.2"/>
-    <!-- Half-lidded impatient eyes -->
-    <path d="M-8,9 Q-5,7 -2,9" fill="none" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
-    <path d="M5,8 Q8,6 11,8" fill="none" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M-16,54 Q0,60 16,54" fill="none" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="0" cy="16" r="24" fill="#D4A574" stroke="#334155" stroke-width="2"/>
+    <path d="M-20,-6 Q-14,-20 0,-18 Q14,-20 20,-6" fill="#5C3D2E" stroke="#334155" stroke-width="1.5"/>
+    <rect x="-20" y="-8" width="40" height="6" rx="3" fill="#5C3D2E"/>
+    <rect x="-14" y="6" width="11" height="9" rx="3" fill="none" stroke="#334155" stroke-width="1.8"/>
+    <rect x="3" y="6" width="11" height="9" rx="3" fill="none" stroke="#334155" stroke-width="1.8"/>
+    <line x1="-3" y1="10" x2="3" y2="10" stroke="#334155" stroke-width="1.5"/>
+    <!-- Half-lidded patient eyes -->
+    <path d="M-12,10 Q-8,7 -4,10" fill="none" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M4,10 Q8,7 12,10" fill="none" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
     <!-- Flat mouth -->
-    <line x1="-4" y1="22" x2="4" y2="22" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
-    <!-- Tapping foot lines -->
-    <line x1="-6" y1="82" x2="-10" y2="88" stroke="#94A3B8" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
-    <line x1="-3" y1="84" x2="-7" y2="90" stroke="#94A3B8" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
-    <line x1="0" y1="86" x2="-4" y2="92" stroke="#94A3B8" stroke-width="0.8" stroke-linecap="round" opacity="0.2"/>
+    <line x1="-5" y1="26" x2="5" y2="26" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
   </g>
 
-  <!-- P2: Thought bubble -->
-  <rect x="354" y="78" width="188" height="56" rx="8" fill="white" stroke="#CBD5E1" stroke-width="1.5"/>
-  <!-- Thought dots -->
-  <circle cx="400" cy="142" r="5" fill="white" stroke="#CBD5E1" stroke-width="1.5"/>
-  <circle cx="392" cy="154" r="3" fill="white" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="448" y="100" text-anchor="middle" fill="#1E293B" font-size="12" font-weight="600">Scanning every</text>
-  <text x="448" y="120" text-anchor="middle" fill="#F97316" font-size="15" font-weight="800">30 seconds...</text>
-
-  <!-- P2: Burger of the Day board -->
-  <g transform="translate(410,268)">
-    <rect x="0" y="0" width="220" height="68" rx="6" fill="#1B3B2E" stroke="#7C6033" stroke-width="2"/>
-    <rect x="3" y="3" width="214" height="62" rx="4" fill="none" stroke="#5C4A28" stroke-width="1"/>
-    <text x="110" y="19" text-anchor="middle" fill="#EAB308" font-size="10" font-weight="700">Burger of the Day</text>
-    <line x1="14" y1="24" x2="206" y2="24" stroke="#EAB308" stroke-width="0.5" opacity="0.5"/>
-    <text x="110" y="38" text-anchor="middle" fill="#FDE68A" font-size="9">"The Mouse-tery Meat Burger"</text>
-    <text x="110" y="50" text-anchor="middle" fill="#FDE68A" font-size="8">now you see it, now you don't</text>
-    <text x="110" y="62" text-anchor="middle" fill="#FDE68A" font-size="7" opacity="0.7">(polled every 30 seconds)</text>
-  </g>
+  <!-- P2: Speech bubble (bottom) -->
+  <rect x="354" y="290" width="210" height="56" rx="8" fill="white" stroke="#CBD5E1" stroke-width="1.5"/>
+  <polygon points="408,290 416,278 424,290" fill="white" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="406" y="288" width="20" height="4" fill="white"/>
+  <text x="459" y="310" text-anchor="middle" fill="#1E293B" font-size="11" font-weight="600">Don't worry! The app checks</text>
+  <text x="459" y="328" text-anchor="middle" fill="#F97316" font-size="14" font-weight="800">every 30 seconds now</text>
 
   <!-- Panel 3: Found it! -->
   <g filter="url(#panelShadow)">
     <rect x="660" y="64" width="324" height="296" rx="12" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
   </g>
 
-  <!-- P3: Green reconnected battery -->
-  <g transform="translate(880,120)">
+  <!-- P3: Green reconnected battery (top right, clear) -->
+  <g transform="translate(900,78)">
     <rect x="0" y="8" width="32" height="52" rx="5" fill="none" stroke="#22C55E" stroke-width="3"/>
     <rect x="9" y="0" width="14" height="10" rx="3" fill="#22C55E"/>
     <rect x="5" y="44" width="22" height="10" rx="2" fill="#22C55E"/>
@@ -155,8 +143,8 @@
   </g>
 
   <!-- P3: Mouse back on desk -->
-  <rect x="690" y="288" width="180" height="10" rx="4" fill="#D4A853" stroke="#A37B2C" stroke-width="1"/>
-  <g transform="translate(780,280)">
+  <rect x="690" y="302" width="180" height="8" rx="4" fill="#94A3B8" stroke="#64748B" stroke-width="1"/>
+  <g transform="translate(780,294)">
     <ellipse cx="0" cy="0" rx="20" ry="12" fill="#404040" stroke="#334155" stroke-width="1.5"/>
     <ellipse cx="0" cy="-8" rx="7" ry="4" fill="#555"/>
     <!-- Glow rings -->
@@ -164,31 +152,33 @@
     <ellipse cx="0" cy="0" rx="34" ry="22" fill="none" stroke="#22C55E" stroke-width="0.5" opacity="0.15"/>
   </g>
 
-  <!-- P3: Gene celebrating -->
-  <g transform="translate(740,180)">
-    <rect x="-13" y="40" width="26" height="38" rx="7" fill="#EAB308" stroke="#334155" stroke-width="2"/>
+  <!-- P3: Teacher celebrating -->
+  <g transform="translate(740,185)">
+    <rect x="-16" y="42" width="32" height="44" rx="9" fill="#2D8B6F" stroke="#334155" stroke-width="2"/>
     <!-- Arms up celebrating -->
-    <line x1="-13" y1="46" x2="-30" y2="18" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="13" y1="46" x2="30" y2="18" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
-    <circle cx="-32" cy="15" r="4.5" fill="#FBBF80" stroke="#334155" stroke-width="1.5"/>
-    <circle cx="32" cy="15" r="4.5" fill="#FBBF80" stroke="#334155" stroke-width="1.5"/>
-    <circle cx="0" cy="14" r="20" fill="#FBBF80" stroke="#334155" stroke-width="2"/>
-    <ellipse cx="-18" cy="14" rx="5" ry="7" fill="#FBBF80" stroke="#334155" stroke-width="1.5"/>
-    <ellipse cx="18" cy="11" rx="5" ry="7" fill="#FBBF80" stroke="#334155" stroke-width="1.5"/>
-    <path d="M-14,-2 Q-6,-14 6,-12 Q16,-10 14,0" fill="#3F2305" stroke="#334155" stroke-width="1.2"/>
-    <!-- Jubilant squint eyes -->
-    <path d="M-8,9 Q-5,6 -2,9" fill="none" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
-    <path d="M5,8 Q8,5 11,8" fill="none" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-16" y1="48" x2="-32" y2="18" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="16" y1="48" x2="32" y2="18" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="-34" cy="15" r="5" fill="#D4A574" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="34" cy="15" r="5" fill="#D4A574" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="0" cy="16" r="24" fill="#D4A574" stroke="#334155" stroke-width="2"/>
+    <path d="M-20,-6 Q-14,-20 0,-18 Q14,-20 20,-6" fill="#5C3D2E" stroke="#334155" stroke-width="1.5"/>
+    <rect x="-20" y="-8" width="40" height="6" rx="3" fill="#5C3D2E"/>
+    <rect x="-14" y="6" width="11" height="9" rx="3" fill="none" stroke="#334155" stroke-width="1.8"/>
+    <rect x="3" y="6" width="11" height="9" rx="3" fill="none" stroke="#334155" stroke-width="1.8"/>
+    <line x1="-3" y1="10" x2="3" y2="10" stroke="#334155" stroke-width="1.5"/>
+    <!-- Happy squint eyes -->
+    <path d="M-12,10 Q-8,6 -4,10" fill="none" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M4,10 Q8,6 12,10" fill="none" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
     <!-- Big happy mouth -->
-    <path d="M-6,20 Q0,28 6,20" fill="none" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-7,24 Q0,32 7,24" fill="none" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
   </g>
 
-  <!-- P3: Speech bubble -->
+  <!-- P3: Speech bubble (left area, above teacher) -->
   <rect x="676" y="76" width="200" height="68" rx="8" fill="white" stroke="#CBD5E1" stroke-width="1.5"/>
   <polygon points="740,144 748,156 756,144" fill="white" stroke="#CBD5E1" stroke-width="1.5"/>
   <rect x="738" y="142" width="20" height="4" fill="white"/>
-  <text x="776" y="98" text-anchor="middle" fill="#1E293B" font-size="13" font-weight="600">The MOUSE-tery</text>
-  <text x="776" y="118" text-anchor="middle" fill="#22C55E" font-size="16" font-weight="800">is SOLVED!</text>
+  <text x="776" y="98" text-anchor="middle" fill="#1E293B" font-size="13" font-weight="600">It reconnected!</text>
+  <text x="776" y="118" text-anchor="middle" fill="#22C55E" font-size="16" font-weight="800">Back online!</text>
   <text x="776" y="136" text-anchor="middle" fill="#94A3B8" font-size="10" font-style="italic">*5-min polling restored*</text>
 
   <!-- Bottom Bar -->

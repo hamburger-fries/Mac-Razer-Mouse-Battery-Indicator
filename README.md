@@ -21,47 +21,23 @@
 
 ## How the Battery Indicator Works
 
-*Inspired by Bob's Burgers — because batteries deserve a good pun too.*
+*Your teacher explains every battery state, step by step.*
 
-<table>
-<tr><td>
-<h3 align="center">Comic 1: "The Rare-ly Charged Burger"</h3>
-<p align="center"><em>When your battery hits critical (0–10%), it's served RARE</em></p>
 <p align="center">
-<img src="resources/comics/comic-1-rarely-charged.svg" alt="Comic 1: The Rare-ly Charged Burger - Critical battery at 3% turns red, character panics and plugs in charger" width="100%">
+<img src="resources/comics/comic-1-rarely-charged.svg" alt="Lesson 1: Critical Battery - Battery at 3% turns red, teacher explains charging urgency" width="100%">
 </p>
-</td></tr>
-</table>
 
-<table>
-<tr><td>
-<h3 align="center">Comic 2: "From Medium to Well Done"</h3>
-<p align="center"><em>Watch the colors go from orange to green as it charges up</em></p>
 <p align="center">
-<img src="resources/comics/comic-2-medium-to-well-done.svg" alt="Comic 2: From Medium to Well Done - Battery charging from orange low through yellow-green medium to full green" width="100%">
+<img src="resources/comics/comic-2-medium-to-well-done.svg" alt="Lesson 2: Battery Levels - Teacher shows low orange, medium yellow-green, and full green states" width="100%">
 </p>
-</td></tr>
-</table>
 
-<table>
-<tr><td>
-<h3 align="center">Comic 3: "The Missing Mouse-tery"</h3>
-<p align="center"><em>Where'd the mouse go? Fast polling to the rescue!</em></p>
 <p align="center">
-<img src="resources/comics/comic-3-missing-moustery.svg" alt="Comic 3: The Missing Mouse-tery - Disconnected gray icon, fast 30-second polling, then reconnection" width="100%">
+<img src="resources/comics/comic-3-missing-moustery.svg" alt="Lesson 3: Mouse Disconnected - Gray icon, fast 30-second polling, then reconnection" width="100%">
 </p>
-</td></tr>
-</table>
 
-<table>
-<tr><td>
-<h3 align="center">Comic 4: "Lightning Bolts & Cheese Melts"</h3>
-<p align="center"><em>The charging bolt journey from orange to green to ORDER UP!</em></p>
 <p align="center">
-<img src="resources/comics/comic-4-lightning-bolts.svg" alt="Comic 4: Lightning Bolts and Cheese Melts - Charging states from orange bolt to green bolt to fully charged" width="100%">
+<img src="resources/comics/comic-4-lightning-bolts.svg" alt="Lesson 4: Charging Indicators - Orange bolt under 30%, white bolt above 30%, no bolt at 100%" width="100%">
 </p>
-</td></tr>
-</table>
 
 ---
 
