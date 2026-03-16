@@ -1,0 +1,50 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        include:
+          - runner: macos-latest # arm64
+            arch: arm64
+          - runner: macos-15-intel # x86_64
+            arch: x86_64
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip
+        uses: actions/cache@v5
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-${{ matrix.arch }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.arch }}-pip-
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build app
+        run: |
+          pyinstaller --clean "Razer Battery.spec"
+          cd dist
+          zip -r "Razer Battery-${{ matrix.arch }}.app.zip" "Razer Battery.app"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: Razer-Battery-${{ matrix.arch }}
+          path: dist/*.app.zip
