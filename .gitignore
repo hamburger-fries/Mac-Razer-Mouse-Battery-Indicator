@@ -29,8 +29,6 @@ wheels/
 *.egg
 MANIFEST
 
-*.spec
-
 *.log
 logs/
 *.log.*
@@ -53,4 +51,3 @@ Desktop.ini
 *.swp
 *~
 .qodo
-
